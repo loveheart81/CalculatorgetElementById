@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculatorJavascript</title>
+</head>
+<body>
+ <div style="text-align: center;">
+        <div>
+            <h1>Calculator</h1>
+            <input id="output" type="text" >
+        </div>
+        <div style="margin: 20px;">
+                <button onclick="document.getElementById('output').value =''" style="margin: 15px; padding: 5px;">C</button>
+                <button onclick="document.getElementById('output').value +='()'" style="margin: 15px;padding: 5px;">()</button>
+                <button onclick="document.getElementById('output').value +='%'" style="margin: 15px;padding: 5px;">%</button>
+                <button onclick="document.getElementById('output').value +='/'" style="margin: 15px;padding: 5px;">/</button>
+        </div>
+        <div style="margin: 20px;">
+                <button onclick="document.getElementById('output').value +='7'" style="margin: 15px;padding: 5px;">7</button>
+                <button onclick="document.getElementById('output').value +='8'" style="margin: 15px;padding: 5px;">8</button>
+                <button onclick="document.getElementById('output').value +='9'" style="margin: 15px;padding: 5px;">9</button>
+                <button onclick="document.getElementById('output').value +='*'" style="margin: 15px;padding: 5px;">x</button>
+        </div>
+        <div>
+            <button onclick="document.getElementById('output').value +='4'" style="margin: 15px;padding: 5px;">4</button>
+            <button onclick="document.getElementById('output').value +='5'" style="margin: 15px;padding: 5px;">5</button>
+            <button onclick="document.getElementById('output').value +='6'" style="margin: 15px;padding: 5px;">6</button>
+            <button onclick="document.getElementById('output').value +='-'" style="margin: 15px;padding: 5px;">-</button>
+        </div>
+        <div>
+            <button onclick="document.getElementById('output').value +='1'" style="margin: 15px;padding: 5px;">1</button>
+            <button onclick="document.getElementById('output').value +='2'" style="margin: 15px;padding: 5px;">2</button>
+            <button onclick="document.getElementById('output').value +='3'" style="margin: 15px;padding: 5px;">3</button>
+            <button onclick="document.getElementById('output').value +='+'" style="margin: 15px;padding: 5px;">+</button>
+        </div>
+        <div>
+            <button onclick="document.getElementById('output').value +='+/-'" style="margin: 15px;padding: 5px;">+/-</button>
+            <button onclick="document.getElementById('output').value +='0'" style="margin: 15px;padding: 5px;">0</button>
+            <button onclick="document.getElementById('output').value +='.'" style="margin: 15px;padding: 5px;">.</button>
+            <button onclick="document.getElementById('output').value= eval(document.getElementById('output').value )" style="margin: 15px;padding: 5px;color: white; background-color:rgb(95, 240, 95);border-radius: 100px;">=</button>
+        </div>
+ </div>
+
+
+
+
+
+    <script>
+        
+    let output = document.getElementById('output');
+    console.log(output.value)
+
+
+
+
+
+    </script>
+    
+<!-- <marquee behavior="left" direction="left"><img src="/dummy2.jpg" alt=""></marquee> -->
+
+</body>
+</html>
